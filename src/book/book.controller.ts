@@ -4,11 +4,11 @@ import { Controller, Get } from '@nestjs/common';
 export class BookController {
   @Get()
   findAll(): string {
-    return 'book';
+    return 'books';
   }
 
   @Get('favorites')
   findAllFavorites(): string {
-    return 'favorites book';
+    return 'favorites books';
   }
 }
